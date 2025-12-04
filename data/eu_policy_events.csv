@@ -1,0 +1,6 @@
+event_date,event_type,description,target_change,jurisdiction,importance,announcement_date,country,source
+2023-11-20,directive_entry_force,RED III entry into force,42.5% renewable energy by 2030,EU,high,2023-11-20,EU,EU_RED
+2021-07-14,policy_proposal,Fit for 55 package proposal,40% renewable energy by 2030 (later increased),EU,high,2021-07-14,EU,EU_RED
+2022-05-18,policy_proposal,REPowerEU Plan announcement,"Accelerated renewable deployment, 45% target",EU,high,2022-05-18,EU,EU_RED
+2024-07-01,transposition_deadline,Member state transposition deadline (Article 36),,EU,medium,2024-07-01,EU,EU_RED
+2025-05-21,transposition_deadline,Transposition deadline for specific provisions,,EU,medium,2025-05-21,EU,EU_RED

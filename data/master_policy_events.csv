@@ -1,0 +1,12 @@
+title,announcement_date,policy_type,tech_focus,country,source,importance,event_date,event_type,description,target_change,jurisdiction
+ALMM Order Solar PV Modules Update,2025-10-13,regulatory,solar_pv,India,MNRE,high,,,,,
+ALMM List-II for Solar PV Cells,2025-09-23,regulatory,solar_pv,India,MNRE,high,,,,,
+RE Equipment Import Monitoring System,2025-10-24,regulatory,renewable_general,India,MNRE,high,,,,,
+Solar Systems Import Policy Amendment,2025-10-10,regulatory,solar,India,MNRE,high,,,,,
+Solar Park Scheme Extension,2025-09-17,operational,solar,India,MNRE,medium,,,,,
+National Bioenergy Programme Budget Increase,2025-09-16,fiscal,bioenergy,India,MNRE,medium,,,,,
+,2023-11-20,,,EU,EU_RED,high,2023-11-20,directive_entry_force,RED III entry into force,42.5% renewable energy by 2030,EU
+,2021-07-14,,,EU,EU_RED,high,2021-07-14,policy_proposal,Fit for 55 package proposal,40% renewable energy by 2030 (later increased),EU
+,2022-05-18,,,EU,EU_RED,high,2022-05-18,policy_proposal,REPowerEU Plan announcement,"Accelerated renewable deployment, 45% target",EU
+,2024-07-01,,,EU,EU_RED,medium,2024-07-01,transposition_deadline,Member state transposition deadline (Article 36),,EU
+,2025-05-21,,,EU,EU_RED,medium,2025-05-21,transposition_deadline,Transposition deadline for specific provisions,,EU

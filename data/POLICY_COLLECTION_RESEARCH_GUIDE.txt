@@ -1,0 +1,275 @@
+
+================================================================================
+MANUAL POLICY EVENT COLLECTION GUIDE (2020-2024)
+================================================================================
+
+OVERALL STRATEGY:
+You have 13 pre-coded major events. Target 30-40 additional events to reach 50-60 total.
+This requires ~3-4 hours of focused research.
+
+================================================================================
+TIER 1 SOURCES (Highest Priority - Easy to Find)
+================================================================================
+
+1. UNION BUDGETS (5 years x 2 hours each = 10 hours, but only 3-4 needed)
+   
+   Quick Summary Approach:
+   - Go to indiabudget.gov.in and search for "renewable energy" or "MNRE"
+   - Extract: New allocations, new schemes, target changes
+   - Expected: 1-2 major events per year = 5-10 events total
+   
+   Links:
+   - 2024-25: https://www.indiabudget.gov.in/budget2024-25/
+   - 2023-24: https://www.indiabudget.gov.in/budget2023-24/
+   - 2022-23: https://www.indiabudget.gov.in/budget2022-23/
+   - 2021-22: https://www.indiabudget.gov.in/budget2021-22/
+   - 2020-21: https://www.indiabudget.gov.in/budget2020-21/
+   
+   Things to Code:
+   ✓ Any budget allocation increase/decrease
+   ✓ New scheme announcements
+   ✓ Target revisions (100 GW → 175 GW, etc.)
+   ✓ New ministry initiatives mentioned
+
+2. PIB PRESS RELEASES (2 hours)
+   
+   Search Strategy:
+   - Visit: https://pib.gov.in
+   - Search: "MNRE" OR "renewable energy" OR "green energy"
+   - Filter by year (2020-2024)
+   - Look for Cabinet approvals, major launches
+   
+   Things to Code:
+   ✓ Cabinet Committee on Economic Affairs (CCEA) approvals
+   ✓ New scheme launches
+   ✓ Amendments to existing schemes
+   ✓ Target or target-related announcements
+
+3. MNRE OFFICIAL ANNOUNCEMENTS (1-2 hours)
+   
+   Resources:
+   - Main site: https://mnre.gov.in/en/
+   - Past notices: https://mnre.gov.in/en/past-notices/current-notices/
+   - Year-wise achievements: https://mnre.gov.in/en/year-wise-achievement/
+   
+   Things to Code:
+   ✓ Major program extensions
+   ✓ ALMM list updates (quarterly 2023-2024)
+   ✓ Quality control order changes
+   ✓ Scheme guideline updates
+   ✓ Large tender announcements (>1 GW)
+
+================================================================================
+TIER 2 SOURCES (Medium Priority - Specific Policies)
+================================================================================
+
+4. SECI TENDERS (1 hour)
+   
+   Search Strategy:
+   - Visit: https://seci.co.in/tenders
+   - Filter for tenders >1,000 MW
+   - Note announcement dates
+   
+   Things to Code:
+   ✓ Major tender awards (>1 GW) as policy signals
+   ✓ Offshore wind tenders (new program)
+   ✓ Manufacturing tenders
+
+5. STATE GOVERNMENT POLICIES (1 hour optional)
+   
+   Priority States:
+   - Gujarat (largest solar state)
+   - Rajasthan (large renewable capacity)
+   - Tamil Nadu (wind power leader)
+   - Maharashtra (recent expansion)
+   
+   Things to Code:
+   ✓ Major policy changes in top states
+   ✓ State-specific targets or mandates
+   ✓ State-level PLI or incentive announcements
+
+6. ECONOMIC TIMES / BUSINESS STANDARD ARCHIVES (30 min)
+   
+   Search Strategy:
+   - ET: https://economictimes.indiatimes.com/industry/renewables
+   - BS: https://www.business-standard.com/
+   - Search: "MNRE" + "policy" + year
+   
+   Use for: Confirmation of dates and details you found elsewhere
+   DON'T code news articles directly - use them to find official source
+
+================================================================================
+QUICK REFERENCE: MAJOR EVENTS BY YEAR
+================================================================================
+
+2024 (Since Jan 1):
+[ ] PM Surya Ghar campaign phase updates?
+[ ] ALMM list updates (check quarterly)?
+[ ] New battery storage policy?
+[ ] Offshore wind progress?
+Expected: 3-5 events
+
+2023 (Complete):
+[✓] National Green Hydrogen Mission (Jan 4) - PRE-CODED
+[✓] ALMM Order (Aug 1) - PRE-CODED
+[ ] ALMM List revisions (multiple updates)?
+[ ] Solar PV cell ALMM order?
+[ ] Union Budget (Feb 1)?
+Expected: 3-5 additional events
+
+2022 (Complete):
+[✓] PLI Tranche II (Sep 29) - PRE-CODED
+[✓] Basic Customs Duty (Jun 1) - PRE-CODED
+[✓] Budget 2022-23 (Feb 1) - PRE-CODED
+[ ] SECI wind tender announcements?
+[ ] State-level policy changes?
+Expected: 2-4 additional events
+
+2021 (Complete):
+[✓] PLI Tranche I (Sep 29) - PRE-CODED
+[✓] PM-KUSUM expansion (Aug 12) - PRE-CODED
+[✓] Budget 2021-22 (Feb 1) - PRE-CODED
+[ ] Offshore wind policy framework?
+[ ] Battery storage announcements?
+Expected: 1-3 additional events
+
+2020 (Complete):
+[✓] Atmanirbhar Bharat (Jun 15) - PRE-CODED
+[✓] 100 GW reaffirmation (Nov 18) - PRE-CODED
+[✓] Solar Park extension (Oct 1) - PRE-CODED
+[✓] Budget 2020-21 (Feb 1) - PRE-CODED
+[ ] COVID-related policy adjustments?
+Expected: 0-2 additional events
+
+================================================================================
+CODING INSTRUCTIONS
+================================================================================
+
+REQUIRED FIELDS:
+
+1. announcement_date (YYYY-MM-DD)
+   - Must be EXACT date from official source
+   - If only month/year known, use first day of month
+   - NEVER guess or approximate
+
+2. title (max 100 characters)
+   - Clear, descriptive
+   - Example: "PLI Scheme for Solar Modules - Tranche II Launch"
+
+3. policy_type (MUST be one of):
+   - 'fiscal' = Money/incentive allocation (PLI, budget, subsidies)
+   - 'regulatory' = Rules/mandates (ALMM, BCD, DCR)
+   - 'operational' = Scheme updates/extensions (PM-KUSUM expansion)
+   - 'policy_announcement' = Targets/plans (100 GW target)
+
+4. tech_focus (MUST be one of):
+   - 'solar', 'solar_pv', 'solar_manufacturing', 'solar_agriculture'
+   - 'wind', 'offshore_wind'
+   - 'green_hydrogen', 'hydrogen'
+   - 'biomass', 'bioenergy'
+   - 'renewable_general'
+
+5. description (1 sentence, 100-200 words)
+   - What was announced
+   - Who announced it
+   - Key numbers if applicable
+   - Example: "Cabinet approved National Green Hydrogen Mission with Rs 19,744 crore outlay, targeting 5 MMT annual production by 2030"
+
+6. importance (MUST be one of):
+   - 'very_high' = Either:
+     * Budget allocation >Rs 5,000 crore, OR
+     * Major regulatory mandate affecting all market participants
+   - 'high' = Either:
+     * Budget allocation Rs 1,000-5,000 crore, OR
+     * Important sector-wide mandate
+   - 'medium' = Budget <Rs 1,000 crore OR target/plan announcement
+   - 'low' = Technical/procedural changes
+
+7. source (MUST be one of):
+   - 'MNRE' = Ministry of New and Renewable Energy
+   - 'PIB' = Press Information Bureau
+   - 'Finance' = Ministry of Finance
+   - 'SECI' = Solar Energy Corporation of India
+   - 'State' = State government
+
+8. url
+   - Direct link to official notification/press release
+   - If PDF, link to PDF
+   - If PIB, link to PIB page
+   - DO NOT link to news articles
+
+9. budget_amount_cr
+   - Numeric value in Rs crore (no commas)
+   - None if not applicable
+   - Example: 19744 (not "19,744 cr")
+
+10. target
+    - If announcement includes numeric target, enter it
+    - Can be capacity (GW), production (MMT), funding amount
+    - None if not applicable
+    - Example: "5 MMT green hydrogen by 2030"
+
+================================================================================
+VALIDATION CHECKLIST
+================================================================================
+
+Before saving each event, verify:
+
+☐ Date is exact (YYYY-MM-DD) from official source
+☐ Title is clear and descriptive (50-100 chars)
+☐ Policy type is one of: fiscal|regulatory|operational|policy_announcement
+☐ Tech focus is correctly categorized
+☐ Importance follows the rules (budget or mandate based)
+☐ Description is 1-2 sentences, factual
+☐ Source is official (not news article)
+☐ URL points to official document/press release
+☐ Budget is numeric in crore (no symbols)
+☐ No duplicate of pre-coded events
+
+================================================================================
+EXAMPLE CODING
+================================================================================
+
+announcement_date: 2023-01-04
+title: National Green Hydrogen Mission Approval
+policy_type: fiscal
+tech_focus: green_hydrogen
+description: Cabinet approved National Green Hydrogen Mission with Rs 19,744 crore outlay, targeting 5 MMT annual production by 2030
+importance: very_high
+source: PIB
+url: https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2039091
+budget_amount_cr: 19744
+target: 5 MMT green hydrogen by 2030
+notes: Major fiscal commitment to green hydrogen technology
+
+================================================================================
+ESTIMATED TIME BREAKDOWN
+================================================================================
+
+Activity                          Time      Events Expected
+────────────────────────────────────────────────────────────
+Review pre-coded 13 events        15 min    (already done)
+Union Budgets 2020-2024           60 min    5-8 events
+PIB press releases search         45 min    5-8 events
+MNRE announcements & ALMM         45 min    5-10 events
+SECI tender announcements         30 min    3-5 events
+Date verification & validation    30 min    (quality control)
+────────────────────────────────────────────────────────────
+TOTAL                           3.5 hrs    Total: 50-60 events
+
+================================================================================
+FINAL OUTPUT
+================================================================================
+
+Once complete:
+1. You'll have: 13 pre-coded + 30-50 manual = 50-60 total events
+2. Spanning: 5 years (2020-2024)
+3. Quality: Verified with official sources
+4. Ready for: Event study analysis + panel regression
+
+File to deliver:
+- india_policy_events_2020_2024_precoded.csv (13 events)
+- india_policy_events_2020_2024_manual.csv (your coded 30-50 events)
+- Then merge both for complete dataset
+
+================================================================================
